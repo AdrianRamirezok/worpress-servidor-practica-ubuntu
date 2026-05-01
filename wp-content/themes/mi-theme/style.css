@@ -1,0 +1,139 @@
+/*
+Theme Name: Mi Theme
+Theme URI: http://localhost
+Author: Adrian Ramirez
+Description: Mi primer theme de WordPress
+Version: 1.0
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* HEADER */
+header {
+    background-color: #ffffff;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+header .logo h1 {
+    font-size: 18px;
+    color: #2c6e9b;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #2c6e9b;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* HERO */
+.hero {
+    background-image: url('images/banner_coop_sanroque.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* SECCIONES */
+.seccion-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 30px;
+    background-color: #f5f5f5;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 30px;
+    width: 280px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    color: #2c6e9b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* NOTICIAS */
+.noticias {
+    padding: 50px 30px;
+    background-color: #ffffff;
+}
+
+.noticias h2 {
+    color: #2c6e9b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.noticia-item {
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.noticia-item h3 {
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.noticia-item a {
+    color: #2c6e9b;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+}
+
+footer a {
+    color: #a8d8ea;
+}
