@@ -3,10 +3,9 @@
 <main>
     <!-- SECCIÓN HERO -->
     <section class="hero">
-        <h2>Cooperativa Limitada de Trabajos y Servicios Públicos</h2>
-        <p>San Roque de Villa del Lago - Edison 1011, Villa Carlos Paz, Córdoba</p>
+        
     </section>
-
+    
     <!-- SECCIÓN INFO -->
     <section class="seccion-info">
         <div class="card">
@@ -49,6 +48,16 @@
             <a href="#">Leer más</a>
         </div>
     </section>
+    <section class="contacto-seccion" style="padding: 50px 0; background: #f9f9f9;">
+    <div class="container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+        <h2 style="margin-bottom: 30px;">Envianos tu consulta</h2>
+        <?php 
+        // Forzamos la ejecución del shortcode directamente por ID
+        // Cambié the_content() por do_shortcode para que sea infalible
+        echo do_shortcode('[wpforms id="16"]'); 
+        ?>
+    </div>
+</section>
 </main>
 
 <?php get_footer(); ?>

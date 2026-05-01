@@ -91,7 +91,7 @@ define( 'WP_DEBUG', false );
 
 define( 'WP_HOME', 'http://192.168.0.14/wordpress' );
 define( 'WP_SITEURL', 'http://192.168.0.14/wordpress' );
-
+define('FS_METHOD', 'direct');
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */
